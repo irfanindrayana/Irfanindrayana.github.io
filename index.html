@@ -3,11 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRFAN</title>
+    <title>Web Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .info {
+            margin-top: 75px;
+            font-size: 24px;
+        }
+        .grid-container {
+        gap: 100px 100px;
+        }
+        .avatar {
+          vertical-align: middle;
+          width: 250px;
+          height: 250px;
+          border-radius: 50%;
+          border: 5px solid #00ffff;
+          margin-top: 200px;
+        }
+        img {
+          vertical-align: middle;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 3px solid #000000;
+          margin-top: 75px;
+        }
+        .link-section {
+            margin-top: 20px;
+        }
+        .link-section a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+            font-size: 18px;
+        }
+        .link-section a:hover {
+            text-decoration: underline;
+        }
+        </style>
 </head>
 <body>
-    <h1>R Mochamad Irfan Kusuma Indrayana</h1>
-    <h2>1202220316</h2>
-    <i>SI4604</i> - <b><u>Sistem Infomasi</u></b>
+    <div class="grid-container"></div>
+
+    <center><img src="foto2.png" alt="Avatar" class="avatar"></center>
+    <div class="info">
+    <center><b><p>R Mochamad Irfan Kusuma Indrayana</p></b></center>
+    <center><p>1202220316</p></center>
+    <center> <i>SI4604</i> - <b><u>Sistem Infomasi</u></b></center>
+    </div>
+
+    <div class="link-section">
+        <a href="https://www.x.com" target="_blank"><img src="twit.png" alt="Avatar" class="img"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="ig.png" alt="Avatar" class="img"></a>
+        <a href="https://web.telegram.org/a/" target="_blank"><img src="tele.png" alt="Avatar" class="img"></a>
+    </div>
+
+    <p id="datetime" align="right" class="tanggal"></p>
+    <script>
+        var now = new Date();
+        var datetime = now.toLocaleString();
+        document.getElementById("datetime").innerHTML = datetime;
+    </script>
 </body>
 </html>
